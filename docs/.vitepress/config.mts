@@ -10,13 +10,14 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Photos", link: "/photos" },
+      { text: "Photography", link: "/photography" },
+      { text: "About Me", link: "/about-me" },
     ],
 
     sidebar: [
       {
-        text: "Photos",
-        link: "/photos",
+        text: "Photography",
+        link: "/photography",
       },
     ],
 

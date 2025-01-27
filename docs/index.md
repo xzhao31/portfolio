@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Welcome to my personal blog"
+  name: "Welcome to my personal portfolio"
   # text: "TODO: Subtitle"
   # tagline: "TODO: Tagline"
   # actions:
@@ -17,7 +17,8 @@ hero:
 features:
   - title: Photos
     details: A collection of photos taken on various cameras
-    link: /photos
+    link: /photography
   - title: About Me
     details: I'm just a girl
+    link: /about-me
 ---
