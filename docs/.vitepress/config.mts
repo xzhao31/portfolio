@@ -2,24 +2,24 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "TODO: add your title here",
-  description: "6.1040 Fall 2024",
+  title: "Xenia's World",
+  // description: "6.1040 Fall 2024",
   // TODO: add your base here; this should be your repo name!
-  // base: "/<REPO_NAME>/",
+  base: "/personal-blog/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Blogs", link: "/blogs" },
+      { text: "Photos", link: "/photos" },
     ],
 
     sidebar: [
       {
-        text: "Blogs",
-        link: "/blogs",
+        text: "Photos",
+        link: "/photos",
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/61040-fa24" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/xzhao31/personal-blog" }],
   },
 });

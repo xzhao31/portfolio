@@ -3,7 +3,7 @@ layout: doc
 ---
 
 <script setup>
-  import {data as blogs} from './blogs/blog.data';
+  // import {data as blogs} from './blogs/blog.data';
   import { withBase } from 'vitepress';
 </script>
 
