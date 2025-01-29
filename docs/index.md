@@ -17,8 +17,8 @@ hero:
 features:
   - title: Photos
     details: A collection of photos taken on various cameras
-    link: /photography
+    link: /photos
   - title: About Me
     details: I'm just a girl
-    link: /about-me
+    link: /about
 ---

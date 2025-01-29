@@ -3,17 +3,66 @@ layout: doc
 ---
 
 <script setup>
-  // import {data as blogs} from './blogs/blog.data';
-  import { withBase } from 'vitepress';
+  const arizona_images = import.meta.glob('/public/arizona/*.{png,jpg,jpeg}', { eager: true });
+  const arizona_imageUrls = Object.values(arizona_images).map(module => module.default);
+
+  const boston_images = import.meta.glob('/public/boston/*.{png,jpg,jpeg}', { eager: true });
+  const boston_imageUrls = Object.values(boston_images).map(module => module.default);
+
+  const portugal_images = import.meta.glob('/public/portugal/*.{png,jpg,jpeg}', { eager: true });
+  const portugal_imageUrls = Object.values(portugal_images).map(module => module.default);
+
+  const california_images = import.meta.glob('/public/california/*.{png,jpg,jpeg}', { eager: true });
+  const california_imageUrls = Object.values(california_images).map(module => module.default);
 </script>
 
-# Blogs
+# Photography
+I am not a professional!! These are shot on Nikon S550 and Sony a6100.
 
-<ul v-if="blogs.length > 0">
-  <li v-for="blog of blogs">
-    <a :href="withBase(blog.url)">{{ blog.frontmatter.title }}</a>
-  </li>
-</ul>
-<p v-else>
-  Nothing here yet!
-</p>
+## Arizona
+Where I lived for 15 years of my life (2006-2021).
+<div class="gallery-container">
+  <img v-for="(url, index) in arizona_imageUrls" :key="index" :src="url" class="gallery-image">
+</div>
+
+## Boston
+Having been at MIT for four years, I have accumulated some pictures around the greater Boston area.
+<div class="gallery-container">
+  <img v-for="(url, index) in boston_imageUrls" :key="index" :src="url" class="gallery-image">
+</div>
+
+## Portugal
+I visited Lisboa and Porto for a week in January 2024.
+<div class="gallery-container">
+  <img v-for="(url, index) in portugal_imageUrls" :key="index" :src="url" class="gallery-image">
+</div>
+
+## California
+My family often (every few years) takes road trips to California. It's only a 5-6 hour drive for us, and it's well worth it.
+<div class="gallery-container">
+  <img v-for="(url, index) in california_imageUrls" :key="index" :src="url" class="gallery-image">
+</div>
+
+<style>
+.gallery-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem; */
+  column-count: 2;
+  column-gap: 10px;
+}
+
+.gallery-image {
+ display: inline-block;
+ width: 100%;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
+
+.gallery-image img {
+ display:block;
+ width: 100%;
+}
+
+</style>
