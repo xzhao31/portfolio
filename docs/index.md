@@ -15,9 +15,12 @@ hero:
   #     link: "https://61040-fa24.github.io/portfolio-dhua/"
 
 features:
-  - title: Photos
+  - title: Photography
     details: A collection of photos taken on various cameras
     link: /photos
+  - title: Recent Reads
+    details: Content consumed and ratings
+    link: /reads
   - title: About Me
     details: I'm just a girl
     link: /about

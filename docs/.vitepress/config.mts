@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Xenia's World",
-  description: "Personal portfolio",
+  description: "Personal website",
   // TODO: add your base here; this should be your repo name!
   base: "/portfolio/",
   themeConfig: {
@@ -11,6 +11,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Photography", link: "/photos" },
+      { text: "Recent Reads", link: "/reads" },
       { text: "About Me", link: "/about" },
     ],
 
@@ -18,6 +19,10 @@ export default defineConfig({
       {
         text: "Photography",
         link: "/photos",
+      },
+      {
+        text: "Recent Reads",
+        link: "/reads",
       },
       {
         text: "About Me",
