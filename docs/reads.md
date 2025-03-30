@@ -10,8 +10,14 @@ Aka content consumed. All ratings are my personal opinions, which means nothing 
 ### Books
 | | |
 | --- | --- |
+| Sociopath: A Memoir (Patric Gagne) | &starf; &starf; &starf; &starf; &starf; |
+| Man's Search for Meaning (Viktor Frankl) | &starf; &starf; &starf; &starf; &star; |
+| Manufacturing Consent: The Political Economy of the Mass Media (Edward Herman and Noam Chomsky) | &starf; &starf; &starf; &starf; &starf; |
 | The Wisdom of Insecurity: A Message for an Age of Anxiety (Alan Watts) | &starf; &starf; &starf; &starf; &star; |
 | Pachinko (Min Jin Lee) | &starf; &starf; &starf; &starf; &star; |
+
+### Selected Favorite Podcasts
+- We're Not Getting Sicker--We're Overdiagnosed - People I (Mostly) Admire
 
 ## 2024
 

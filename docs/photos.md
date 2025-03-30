@@ -17,6 +17,9 @@ layout: doc
 
   const california_images = import.meta.glob('/public/california/*.{png,jpg,jpeg}', { eager: true });
   const california_imageUrls = Object.values(california_images).map(module => module.default);
+
+  const nola_images = import.meta.glob('/public/nola/*.{png,jpg,jpeg}', { eager: true });
+  const nola_imageUrls = Object.values(nola_images).map(module => module.default);
 </script>
 
 # Photography
@@ -50,6 +53,12 @@ Mainly in the northwest Arkansas area where Walmart headquarters are (my first j
 My family often (every few years) takes road trips to California. It's only a 5-6 hour drive for us, and it's well worth it.
 <div class="gallery-container">
   <img v-for="(url, index) in california_imageUrls" :key="index" :src="url" class="gallery-image">
+</div>
+
+## New Orleans
+A spring break trip with my friends in March 2025. It is a city of so much cultue, and one I hope to visit again someday!
+<div class="gallery-container">
+  <img v-for="(url, index) in nola_imageUrls" :key="index" :src="url" class="gallery-image">
 </div>
 
 <style>
